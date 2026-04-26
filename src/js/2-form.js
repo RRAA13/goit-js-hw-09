@@ -12,7 +12,7 @@ const savedData = localStorage.getItem(STORAGE_KEY);
 if (savedData) {
     formData = JSON.parse(savedData);
 
-    form.elements.emeil.value = formData.email || "";
+    form.elements.email.value = formData.email || "";
     form.elements.message.value = formData.message || "";
 }
 
